@@ -1,0 +1,26 @@
+body {
+  background-color: #0d4d4d;
+  color: #fff;
+}
+
+.container {
+  margin: 20px 50px;
+}
+
+.result-row {
+  list-style: none;
+  background-color: #669999;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+#stream-results {
+  padding: 0;
+}
+
+.data-logo {
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+}
