@@ -1,6 +1,6 @@
 var $streamResults = $('#stream-results');
 
-var channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
+var channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "RobotCaleb", "noobs2ninjas"];
 
 function generateURL(type, channel) {
   return 'https://wind-bow.gomix.me/twitch-api/' + type + '/' + channel + '?callback=?';
@@ -11,9 +11,9 @@ function generateResult(channelData, streamData) {
 
   var $text = $('<div class="col-sm-10" />');
 
-  var $displayName = $('<h2 />', {text: channelData.display_name});
-  var $game = $('<p />', {text: channelData.game});
-  var $status = $('<p />', {text: channelData.status});
+  var $displayName = $('<a class="channel-name-link" href="' + channelData.url + '">Channel: ' + channelData.display_name + '</a>', {text: channelData.display_name});
+  var $game = $('<p>Game: ' + channelData.game + '</p>');
+  var $status = $('<p>Status: ' + channelData.status + '</p>');
 
   $text.append($displayName);
   $text.append($game);
