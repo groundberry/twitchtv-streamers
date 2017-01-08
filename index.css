@@ -3,44 +3,36 @@ body {
   color: #0B486B;
 }
 
-.container {
-  margin: 20px 50px;
-}
-
-.header h1 {
+h1 {
   color: #0B486B;
-  font-size: 2.75em;
-  font-weight: bold;
 }
 
-.result-row {
+.channel-filters {
+  margin-top: 36px;
+  text-align: right;
+}
+.channel-filter {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.channel-status {
+  font-style: italic;
+}
+
+
+#channels {
   list-style: none;
-  background-color: #A8DBA8;
-  border-radius: 10px;
-  margin: 15px 0;
-}
-
-#stream-results {
   padding: 0;
 }
 
-.channel-name-link {
+.channel .panel-title {
   color: #4C9A71;
-  font-size: 1.75em;
-  font-weight: bold;
 }
-
-.channel-name-link:hover {
+.channel .panel-title:hover {
   color: #65B38B;
 }
 
-.channel-name-link:visited {
-  color: #0B486B;
-}
-
-.data-logo {
-  width: 100%;
-  border-radius: 50%;
-  display: block;
-  margin: 15px auto;
+.channel-title {
+  margin: 0;
 }

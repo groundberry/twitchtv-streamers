@@ -5,21 +5,36 @@
     <title>Twitch.tv streamers</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
-
   </head>
   <body>
-    <div class="container row">
-      <div class="header">
-        <h1>Twitch.tv streamers</h1>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 title">
+          <h1>Twitch.tv streamers</h1>
+        </div>
+        <div class="col-sm-6 channel-filters">
+          <label class="channel-filter">
+            <input type="radio" name="channels" value="all" checked>
+            All channels
+          </label>
+          <label class="channel-filter">
+            <input type="radio" name="channels" value="online">
+            Online
+          </label>
+          <label class="channel-filter">
+            <input type="radio" name="channels" value="offline">
+            Offline
+          </label>
+        </div>
       </div>
-      <div class="display">
-        <ul id="stream-results">
 
+      <div class="row">
+        <ul id="channels">
         </ul>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="index.js"></script>
 </html>
